@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+   <link rel="stylesheet" href="./cardnumber.css">
+   
+   
+</head>
+<body>
+<script>
+    function validate()
+    {
+        var name = document.getElementById("personname").value;
+        var no = document.getElementById("cardnumber").value;
+        var my = document.getElementById("My").value;
+        var cvv = document.getElementById("CVV").value;
+
+        if(name==""||no==""||my==""||cvv==3){
+            alert("Kindly Enter the Valid Details");
+            return false;
+        }
+        document.location="Final.html"
+        alert("Payment Done");
+        return true;
+    }
+
+
+    function validate1()
+    {
+        alert("Initiated Payment Request to Your Registered Mobile Number.... ")
+    }
+    
+</script>
+
+    <div class="container p-0">
+        <div class="card px-4">
+            <p class="h8 py-3">Payment Details</p>
+            <div class="row gx-3">
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <p  class="text mb-1">CARD NUMBER</p> <input id="CARD NUMBER" class="form-control mb-3" type="text" placeholder="NUMBER" value="XXXX-XXXX-XXXX-4335" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Card VENDOR</p> <input id="cardvendor" class="form-control mb-3" type="text"placeholder="text" value="Mastercard,American express,VISA" required>
+                        
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Expiry</p> <input id="My" class="form-control mb-3" type="text" placeholder="MM/YYYY" required>
+                    </div>
+                </div>
+                <div class="col-6">
+ <div class="d-flex flex-column">
+  <p class="text mb-1">CVV/CVC</p> <input id="CVV" class="form-control mb-3 pt-2 " type="password" placeholder="***" required>
+   </div>
+ </div>
+  <div class="col-12">
+    <div class="col-12">
+        <div class="d-flex flex-column">
+            <p  class="text mb-1">CARD HOLDER NAME</p> <input id="CARD HOLDER NAME" class="form-control mb-3" type="text" placeholder="NAME" value="Johnny Sue Cash" required>
+        </div>
+
+        <p>
+			<label for="remember"></label>
+			<input id="remember" name="remember" type="checkbox"></input>
+		 </p>
+         <div class="check box" onclick="validate1()">I hearby certify i have read and understand the information provided to me in the Terms of Service regarding the companies standard operating procedures</div>
+<div class="btn btn-primary mb-3" onclick="validate1()"> <span class="ps-3">PLACE ORDER</span> <span class="fas fa-arrow-right"></span> </div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

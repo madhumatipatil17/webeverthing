@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RJ Pharmacy</title>
+  <link rel="stylesheet" href="./forget.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> -->
+
+
+
+</head>
+
+<body>
+
+
+
+  <section>
+    <div class="imgBx">
+      <img src="../Rjorg/images/pexels-total-shape-2383010.jpg" alt="">
+    </div>
+
+    <div class="container p-0">
+      <div class="card px-4" style="margin-top: 200px;">
+
+        <div class="forg">
+          <form id="formValidate">
+            <div class="row gx-3">
+              <div class="col-12">
+                <div class="d-flex flex-column">
+                  <p class="text mb-1" style="font-size: larger;">Email</p> <input id="personname"
+                    class="form-control mb-3" type="text" placeholder="name@example.com" oninput="validateName()">
+                  <p id="nameErr"></p>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+        <div class="col-12">
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Sent</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Password sent to email Succesfully
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                    data-bs-dismiss="modal"><a class="link-light paym" href="../Login/login.html">Redirect to login
+                      page</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-primary" data-bs-toggle="modal" onclick="validate();" href="#exampleModalToggle"
+            role="button" >Sent <span class="fas fa-arrow-right"></span></a>
+        </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

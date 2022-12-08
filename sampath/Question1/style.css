@@ -1,0 +1,86 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+header h3{
+   color: black;
+   background-color: white;
+   float: left;
+}
+.navbar ul{
+    list-style: none;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    display: block;
+    padding: 10px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: cadetblue;
+}
+#reg{
+    float: right;
+    border-radius: 9px;
+    background-color:lightgray;
+    border-color: green;
+    color: green;
+    font-size: medium;
+}
+section .left #btnsub{
+    color:white;
+    background-color:green;
+    border-radius: 9px;
+    box-sizing: 25px;
+}
+h2{
+    color: lightseagreen;
+    text-align: justify;
+    margin-left: 100px;
+}
+h4{
+    margin-left: 50px;
+    font-size: 22px;
+}
+p{
+    font-size: 18px;
+    margin-left: 50px;
+}
+#btnsub{
+    margin-left: 150px;
+    font-size: medium;
+    border-radius: 9px;
+    background-color: lightgray;
+    color: green;
+    border-color: green;
+    font-size: medium;
+}
+.right{
+    float: right;
+    padding: 150px;
+    padding-top: 10px;
+    margin-top: -200px;
+}
+#btnapply{
+    border-radius: 9px;
+    color:white;
+    background-color: green;
+    font-size: medium;
+    margin-left: 120px;
+}
+.dis

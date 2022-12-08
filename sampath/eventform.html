@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<h2>Please Fill thid Form to get Quote</h2>
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+</head>
+<body>
+	<form id="myform">
+		<label for="name"> Your Name(*): </label><br>
+		<input class="left" id="name" name="name"><br>	
+		<label for="phone"> Phone Number(*): </label><br>
+		<input class="right" id="mobile" name="mobile">
+		<br/>
+    </script>
+    <p> <label for="number"><b>Email Address</b></label>
+    </p>
+    <p> <input type="text" placeholder="Enter your email" name="email" >
+    </p>
+    <p>
+      <label for="events">Type of Event:</label>
+
+<select name="events" id="events">
+<option value="Wedding">Wedding</option>
+<option value="Reception">Reception</option>
+</select>
+    </p>
+    <p>
+      <p> <label for="date"><b>Event Date</b></label>
+      </p>
+      <p> <input type="date" placeholder="" name="date" >
+      </p>
+    </p>
+</p>
+<p><label for="number"><b>Number of expected Guest</b></label></p>
+<p> <input type="number" placeholder="" name="number" >
+</p>
+
+<input type= "button" value="submit">
+	<closeform></closeform></form>
+
+	<script>
+	jQuery.validator.setDefaults({
+	  debug: true,
+	  success: "valid"
+	});
+	$( "#myform" ).validate({
+	  rules: {
+		name: {
+		   required: true,
+			minlength: 2
+		},
+		email: {
+		  required: true,
+		  email: true
+		},
+		mobile: {
+		  required: true,
+		  number: true,
+		  maxlength: 10
+		}
+	  }
+	});
+	</script>
+</body>
+</html>

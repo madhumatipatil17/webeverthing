@@ -1,0 +1,73 @@
+.bgco {
+  background-color: black;
+  
+}
+
+.bgco select{
+ float: right;
+  background-color:black;
+  color: white;
+
+}
+
+.brand1 ul li{
+
+     float: right;
+     margin-right: 55px;
+  
+     list-style-type: none;;
+}
+.brand1 ul li a{
+color: black;
+}
+
+.navbar {
+    background-color: rgb(26,165,74);
+    color: rgb(255, 255, 255);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: azure;
+}
+
+.container1 {
+    position: relative;
+    
+    color: rgb(10, 4, 4);
+    
+  }
+  
+  .tex  {
+    position: absolute;
+    top: 227px;
+    right: 300px;
+   font-weight: 500;
+   font-size: x-large;
+
+  }
+  h1{
+    position: absolute;
+    top: 250px;
+    right: 210px;
+    
+  font-weight: bold;
+  }
+  .tex1{
+    position: absolute;
+    top: 288px;
+    right: 129px;
+   font-weight: 500;
+   color: rgb(0, 0, 0);
+   
+  }
+
+  .Button{
+    position: absolute;
+    top: 350px;
+    right: 430px;
+   font-weight: 500;
+   color: rgb(0, 0, 0);
+   background-color:orange;
+   
+  }
+
+ 

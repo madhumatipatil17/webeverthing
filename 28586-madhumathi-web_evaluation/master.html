@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MASTER</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="side-nav">
+            <div class="hover">
+                <a class="text-dec" href="">Home</a>
+            </div>
+            <div class="hover">
+                <a class="text-dec" href="">Dashboard</a>
+            </div>
+            <div class="hover">
+                <a  class="text-dec" href="">Courier Master</a>
+            </div>
+            
+            <div class="hover">
+                <a  class="text-dec" href="">My Request</a>
+            </div>
+        
+        </div>
+        
+        <div class="table-parent">
+            <form class="search" action="">
+                <input type="text" name="" placeholder="Please Search " id="">
+                <button class="btn">Go</button>
+            </form>
+            <table class="table-container" border="1px" cellpadding = "7px" cellspacing = "0px">
+                <tr>
+                    <th colspan="6">
+                        Courier Vendor Details
+                    </th>
+                </tr>
+                <tr>
+                    <!-- <th> -->
+                    <td rowspan="2">
+                        <select name="" id="">
+                            <option value="">
+                                Courier Type
+                            </option>
+                            <option value="">Domastic</option>
+                            <option value="">International</option>
+                        </select>
+                    </td>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        Contact
+                    </th>
+                    <th>Location</th>
+                    <th>
+                        Edit
+                    </th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                   
+                    <td>ABCD1234</td>
+                    <td>123456789</td>
+                    <td>Channi</td>
+                    <td> <a href=""><i class="fa-solid fa-circle-minus"></i></a> </td>
+                    <td><a  href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <select name="" id="">
+                            <option value="">
+                                Courier Vendor
+                            </option>
+                            <option value="">
+                                Blued Art
+                            </option>
+                            <option value="">
+                                DTDC
+                            </option>
+                        </select>
+                    </td>
+                    <td>XYZA</td>
+                    <td>12345678</td>
+                    <td>Bangalore</td>
+                    <td> <a href=""><i class="fa-solid fa-circle-minus"></i></a> </td>
+                    <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td>XYZA</td>
+                    <td>12345678</td>
+                    <td>Bangalore</td>
+                    <td> <a  href=""><i class="fa-solid fa-circle-minus"></i></a> </td>
+                    <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+            </table>
+        </div>
+        <a class="add-btn" href="./newrequest.html"><i class="fa-solid fa-circle-plus"></i>ADD</a>
+       
+    </div>
+
+    
+</body>
+
+</html>

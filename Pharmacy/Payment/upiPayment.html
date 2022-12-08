@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> -->
+    <link rel="stylesheet" href="./payment.css">
+    <script src="./upiPayment.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <div class="logo"> <a href="../index.html" class="navbar-brand"><img src="../images/pharmacy.png" alt="">RJ
+                    Pharmacy</a> </div>
+
+            <!-- <a class="navbar-brand" href="index.html">RJ Pharmacy</a> -->
+            <div class="menu"><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-expanded="false" style="color: black;">
+                    <span class="navbar-toggler-icon" style="color: black;"></span>
+                </button></div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="item">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../index.html" style="color: black;font-weight: bold;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About/about.html"
+                                style="color: black;font-weight: bold;">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                style="color: black;font-weight: bold;">Services </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Hospitality/hospital.html">Hospitality</a></li>
+                                <li><a class="dropdown-item" href="../Rjorg/RJorg.html">RJ Organization</a></li>
+                                <!-- <li><a class="dropdown-item" href="../About/about.html">About RJ Organization</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href=" index.html"
+                                style="color: black;font-weight: bold;">Resources</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Product/Product.html">Medicine</a></li>
+                                <!-- <li><a class="dropdown-item" href="../">Health Care</a></li> -->
+                                <li><a class="dropdown-item" href="../MedicalInfo/mediInfo.html">Medical Information</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Contact/contact.html"
+                                style="color: black;font-weight: bold;">Contact</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: black;font-weight: bold;">My Cart</a>
+                </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link cart" href="../Cart/cart.html"
+                                style="color: black;font-weight: bold;">Cart</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="but"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<a href="../Login/login.html"
+                        class="link-light log"
+                        style="text-decoration: none;font-size:12px;text-align: center;color: black; font-size: large; font-weight: bolder;">Login/Signup</a>&nbsp;&nbsp;
+                </div>
+
+
+            </div>
+    </nav>
+    <div class="sidebar">
+        <br>
+        <div style="font-weight: bolder; margin-left: 15px;">Payment Method</div>
+        <br>
+        <a href="../Payment/cardPayment.html">Card Payment&nbsp;&nbsp;<i class="fa fa-chevron-right"
+                aria-hidden="true"></i></a>
+        <br>
+        <a class="active" href="../Payment/upiPayment.html">UPI Payment&nbsp;&nbsp;<i class="fa fa-chevron-right"
+                aria-hidden="true"></i></a>
+
+    </div>
+
+    <section>
+
+
+        <div class="container p-0" style="margin-left: 13%; margin-top: 5%;">
+            <div class="card px-4">
+                <p class="h8 py-3">UPI Details </p>
+                <form id="formValidate">
+                    <div class="row gx-3">
+                        <div class="col-12">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">Holder Name</p> <input id="personname" class="form-control mb-3"
+                                    type="text" placeholder="Name" oninput="validateName()">
+                                <p id="nameErr" style="color: red;"></p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">UPI ID</p> <input id="upiid" class="form-control mb-3" type="text"
+                                    placeholder="name@okbankname" oninput="validateUpi()">
+                                <p id="upiErr" style="color: red;"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">Phone Number</p> <input id="phoneno" class="form-control mb-3"
+                                    type="text" placeholder="123-456-7890" oninput="validatePhone()">
+                                <p id="phonenoErr" style="color: red;"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel">Payment method</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Payment Succesfully
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal"><a
+                                                    class="link-light paym" href="../index.html">Continue
+                                                    explore</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Hide this modal and show the first with the button below.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary" data-bs-toggle="modal" onclick="validate()"
+                                href="#exampleModalToggle" role="button">Pay Rs <span
+                                    class="fas fa-arrow-right"></span></a>
+                        </div>
+
+
+                        <div style="margin-left: 43%;font-size: large;">(OR)</div>
+                        <div class="col-12">
+                            <div class="d-flex flex-column">
+
+                                <img src="./qr.jpg" alt="" style="width: 50%; margin-left: 100px;">
+                                <p id="phonenoErr"></p>
+                            </div>
+                        </div>
+                        <div style="margin-left: 36%;font-size: large;">Scan QR Code</div>
+
+
+
+                    </div>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

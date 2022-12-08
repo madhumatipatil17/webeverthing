@@ -1,0 +1,25 @@
+.bg{
+    background-image: url("../images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Register{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+      border-radius: 30px;
+      margin-top: 5%;
+      width: 98%;
+        padding-right: 10px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 4px;
+    padding-bottom: 4%;
+    
+    align-items: center;
+    justify-content: center;
+    
+    
+}

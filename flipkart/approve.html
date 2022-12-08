@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./afterlogin.css">
+    <!-- <img src="..." class="img-fluid" alt="Responsive image"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head><htmml>
+    <head>
+        <style>
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 50%;
+            float: left;
+            margin-left: 200px;
+            margin-bottom: 200px;
+            margin-top: 100px;
+		}
+		
+		td,
+		th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		
+        </style>
+    </head>
+<body>
+    <div class="mainPage">
+    <div class="content">
+        <div class="topnav">
+            <a class="active" href="home.html">Home</a>
+            <a href="#about">productS</a>
+            <!-- <a href="#contact">Contact</a> -->
+            <input type="text" placeholder="Search..">
+          </div>
+        <!-- Side navigation -->
+        <div>
+<div class="sidenav"><br>
+    <a href="./afterlogin.html">TO DO</a>
+    <!-- <a href="./cart.html">cart</a> -->
+    <!-- <a href="#">myorder</a> -->
+    <!-- <a href="#">Material safty data sheet</a> -->
+  </div>
+  
+  <div class="approver">
+  <table>
+    <tr>
+        <th>itemname</th>
+        <th>orderno</th>
+        <th>type</th>
+        <th>length</th>
+        <th>dia(mm)</th>
+        <th>status</th>
+        <th>available quentity</th>
+        <th>ordered quentity</th>
+        <th>Approve</th>
+        <th>reject</th>
+    </tr>
+    <tbody id="trains">
+        <tr>
+            <td>pilips bit</td>
+            <td>085355</td>
+            <td>main line+repair </td>
+            <td>100mm</td>
+            <td>PH2</td>
+            <!-- <td>-</td> -->
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option value="Sleeper">pending</option>
+                    <option value="General">approved</option>
+                    <option value="First Tier AC">rejected</option>
+                     </select>
+            </td>
+            <td>560</td>
+            <td>130</td>
+            <th>
+                <!-- <div class="approve"> -->
+            <button class="approve">approve</button>
+        </th>
+        <th><button class="reject">reject</button></th>
+    </div>
+        </tr>
+        <tr>
+            <td>funel</td>
+            <td>057378</td>
+            <td>mainline</td>
+            <td>150mm</td>
+            <td>ph2</td>
+            <!-- <td>590</td> -->
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option value="Sleeper">pending</option>
+                    <option value="General">approved</option>
+                    <option value="First Tier AC">rejected</option>
+                     </select>
+            </td>
+            <div class="approve">
+            <td>1000</a></td>
+            <td>5000</td>
+            <th>
+                <button class="approve">approve</button>
+            </th>
+            <th>
+                <button >reject</button>
+            </th>   
+        </div>
+        </tr>
+        <tr>
+            <div class="approve">
+            <td>deep socket</td>
+            <td>0476782</td>
+            <td>assesories</td>
+            <td>200mm</td>
+            <td>-</td>
+        </div>
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option value="Sleeper">pending</option>
+                    <option value="General">approved</option>
+                    <option value="First Tier AC">rejected</option>
+                     </select>
+            </td>
+            <td>400</td>
+            <td>120</td>
+            <th>
+                <div class="approve">
+                <button>approve</button>
+
+            </th>
+            <th>
+                <button>reject</button>
+            </th>
+        </div>
+        </tr>
+
+        <tr>
+            <td>multimeter</td>
+            <td>058397</td>
+            <td>acceseoreies</td>
+            <td>fluck 179-2</td>
+            <td>-</td>
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option value="Sleeper">Pending</option>
+                    <option value="General">Approved</option>
+                    <option value="First Tier AC">Rejected</option>
+                     </select>
+            </td>
+            <td>500</td>
+            <td>250</td>
+            <th>
+                <button>approve</button>
+
+            </th>
+            <th>
+                <button>reject</button>
+            </th>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+</div>
+</body>
+</htmml>

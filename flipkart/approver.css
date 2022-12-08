@@ -1,0 +1,25 @@
+/* .approver{
+    margin-left: 11%;
+    float: left;
+}
+.approve{
+    cursor: pointer;
+} */
+
+.child{
+    height: 400px;
+    width: 200px;
+    border: 1px solid red;
+    margin: 15px;
+    border: black solid 1px;
+}
+
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}

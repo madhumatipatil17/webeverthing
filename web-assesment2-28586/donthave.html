@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./donthave.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
+        
+    <title>signup</title>
+</head>
+
+<body>
+    <div>
+        <nav class="header">
+            <p>courier
+          <span>madhu</span></p>
+           <button type="button" class="btn btn-danger" style="float: right;margin-top: -58px;"><a href="homepage.html"
+
+                        style="text-decoration: none">Logout</a></button>
+        </nav>
+    </div>
+    <div class="parent" id="nav">
+        <div class="side-nav">
+            <div class="hover">
+                <a class="nav" href="http://127.0.0.1:5501/home.html">Home</a>
+            </div>
+            <div class="hover">
+                <a class="nav" href="new request.html">New Request'
+                </a>
+            </div>
+    
+        </div>
+        
+        <div class="form" style="margin-left: -155px;margin-top: -15px;">
+            <form action="javascript:void(0)">
+                
+                <label for="">order Id</label>
+                <input type="text" name="" id=""><br><br>
+                <label for="">vendorName</label>
+                <input type="text"  id="EmpName"><br><br>
+                <!-- <label for="">Batch</label> -->
+                <!-- <input type="text"  name="" id=""><br><br> -->
+                <label for="">Date</label>
+                <input type="date" id="dateV"><br><br>
+                <label for="">Time</label>
+                <input type="text"  name="" id=""><br><br>
+               <button type="button" href="./home1.html">back</button>
+                    <input type="button" href="./master.html" value="Login" onclick="login();" class="btn btn-success" />
+                    
+                    <button  class="btn btn-danger" href="">Cancel</button>
+                   
+
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>@all copyrights HTC Global SERVICES</p>
+            </div>    
+            
+            
+            <script>
+                function login(e)
+                {
+                //    e.preventDefault();
+                    var regName = /^[a-zA-Z]+$/;
+                    var regexp = /^\S*$/;
+             var name = document.getElementById('EmpName').value;
+            
+            
+                    // only for current date validation 
+                    let d=document.getElementById('dateV').value;
+            let today = new Date().toISOString().slice(0, 10)
+            if(d!==today){
+                alert('invalid date')
+            }
+            else if(!regName.test(name)){
+                alert('Invalid name given.');
+            }
+            
+            
+            else
+                {
+            
+               window.location = "http://127.0.0.1:5501/manager-login.html";
+                    }
+                }
+            </script>
+</body>
+
+</html>

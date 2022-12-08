@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ Pharmacy</title>
+    <link rel="stylesheet" href="./hospital.css" type="text/css">
+    <!-- <link rel="stylesheet" href="C:\Users\ragul.valliammal\Desktop\Pharmacy\bootstrap-5.0.2-dist\css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <div class="logo"> <a href="../index.html" class="navbar-brand"><img src="../images/pharmacy.png" alt="">RJ
+                    Pharmacy</a> </div>
+            <div class="menu"><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-expanded="false" style="color: black;">
+                    <span class="navbar-toggler-icon" style="color: black;"></span>
+                </button></div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="item">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../index.html" style="color: black;font-weight: bold;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About/about.html"
+                                style="color: black;font-weight: bold;">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                style="color: black;font-weight: bold;">Services </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Hospitality/hospital.html"
+                                        style="color: black;">Hospitality</a></li>
+                                <li><a class="dropdown-item" href="../Rjorg/RJorg.html" style="color: black;">RJ
+                                        Organization</a></li>
+                                <!-- <li><a class="dropdown-item" href="../About/about.html"  style="color: black;">About RJ Organization</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="index.html"
+                                style="color: black;font-weight: bold;">Resources</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Product/Product.html"
+                                        style="color: black;">Medicine</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Health Care</a></li> -->
+                                <li><a class="dropdown-item" href="../MedicalInfo/mediInfo.html"
+                                        style="color: black;">Medical Information</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Contact/contact.html"
+                                style="color: black;font-weight: bold;">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="but"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<a href="../Login/login.html"
+                        class="link-light log"
+                        style="text-decoration: none;font-size:12px;text-align: center;color: black; font-size: large; font-weight: bolder;">Login/Signup</a>&nbsp;&nbsp;
+                </div>
+
+
+            </div>
+    </nav>
+    <div class="docList">DOCTOR LIST</div>
+    <table class="table table-striped table-bordered" id="sortTable">
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Department</th>
+                <th>Hospital</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Prodcuts from gavascript file in here. -->
+        </tbody>
+    </table>
+    <script src="hospital.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

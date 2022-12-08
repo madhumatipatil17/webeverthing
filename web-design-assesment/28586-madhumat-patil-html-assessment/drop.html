@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"
+        href="dstyle.css">
+        <title> payment</title>
+<meta charset="UTF-8">
+<header>
+    <div class="container">
+        <div class="row">
+            <!-- <img class="header-logo" src="logo.jpeg"> -->
+        </div>
+    </div>
+    </header>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="f-group">
+                <label for="">payment</label>
+                <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
+                    <option value="payment option">payment option  </option>
+                    <option value="google pay"> google pay </option>
+                    <option value="phone pay"> phone pay </option>
+                    <option value="paytm"> paytm </option>
+                </select>
+            </div>
+            <div class="f-group">
+                <label for="">online option</label>
+                <select name="slct2" id="slct2"></select>
+            </div>
+
+        <script>
+            function populate(s1,s2)
+            {
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+                
+                s2.innerHTML = "";
+                if(s1.value == "google pay")
+                {
+                    var optionArray = ['qrcode|qrcode','scanner|scanner',];
+                }
+                else if(s1.value == "phone pay")
+                {
+                    var optionArray = ['upi|upi',' |','card|card',];
+                }
+                else if(s1.value == "paytm")
+                {
+                    var optionArray = ['scan|scan',];
+                }
+                for(var option in optionArray)
+                {
+                    var pair = optionArray[option].split("|");
+                    var newoption = document.createElement("option");
+                    newoption.value = pair[0];
+                    newoption.innerHTML=pair[1];
+                    s2.options.add(newoption);
+                }
+            }
+        </script>
+    </body>
+    </html>

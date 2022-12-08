@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"
+        href="dstyle.css">
+        <title> Login  </title>
+<meta charset="UTF-8">
+<header>
+    <div class="container">
+        <div class="row">
+            <img class="header-logo" src="logo.jpeg">
+        </div>
+    </div>
+    </header>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="f-group">
+                <label for="">Country</label>
+                <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
+                    <option value=""> -- Choose Country -- </option>
+                    <option value="india"> -INDIA- </option>
+                    <option value="america"> -AMERICA- </option>
+                    <option value="usa"> -USA- </option>
+                </select>
+            </div>
+            <div class="f-group">
+                <label for="">City</label>
+                <select name="slct2" id="slct2"></select>
+            </div>
+
+        <script>
+            function populate(s1,s2)
+            {
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+                
+                s2.innerHTML = "";
+                if(s1.value == "india")
+                {
+                    var optionArray = ['delhi|Delhi','mumbai|Mumbai','bangalore|Bangalore','hyderabad|Hyderabad'];
+                }
+                else if(s1.value == "america")
+                {
+                    var optionArray = ['new york|New York','los angeles|Los Angeles','chicago|Chicago','houston|Houston'];
+                }
+                else if(s1.value == "usa")
+                {
+                    var optionArray = ['boston|Boston','phoenix|Phoenix','chicago|Chicago','houston|Houston'];
+                }
+                for(var option in optionArray)
+                {
+                    var pair = optionArray[option].split("|");
+                    var newoption = document.createElement("option");
+                    newoption.value = pair[0];
+                    newoption.innerHTML=pair[1];
+                    s2.options.add(newoption);
+                }
+            }
+        </script>
+    </body>
+    </html>

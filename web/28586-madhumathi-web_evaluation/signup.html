@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            margin: 5%;
+
+        }
+
+        input {
+            margin-left: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container1">
+        <h1>WELCOME TO LOGIN</h1>
+        <div class="innerContainer" style="border: 2px black solid;">
+            <form name="registerForm">
+                <div>
+                    <label>FIRST NAME:</label>
+                    <input type="text" id="fname" placeholder="Your First Name" />
+                    <p id="fnameErr"></p>
+                </div>
+
+
+                <div>
+                    <label>EMAIL ADDRESS:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <small id="emailvalid">
+
+                    </small>
+                </div>
+
+
+                <div>
+                    <label>password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Enter password">
+                    <small id="passvalid">
+
+                    </small>
+                </div>
+
+              
+
+                <button type="submit" id="subButton" disabled>submit</button>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="./signup.html"></script>
+    <script>
+        var date=new Date();
+        var tdate=date.getDate();
+        var month=date.getMonth()+1;
+        if(tdate<10){
+        tdate='0'+tdate;
+        }
+        if(month<10){
+        month='0'+month;
+        }
+        console.log(month);
+        
+        var year=date.getUTCFullYear();
+        var minDate=year+"-"+month+"-"+tdate;
+        document.getElementById("").setAttribute('min',minDate)
+        console.log(minDate);
+        </script>
+        <script src="./signup.js"></script>
+        <script>
+            var date=new Date();
+            var tdate=date.getDate();
+            var month=date.getMonth()+1;
+            if(tdate<10){
+            tdate='0'+tdate;
+            }
+            if(month<10){
+            month='0'+month;
+            }
+            console.log(month);
+            
+            var year=date.getUTCFullYear();
+            var minDate=year+"-"+month+"-"+tdate;
+            document.getElementById("").setAttribute('min',minDate)
+            console.log(minDate);
+            </script>
+            
+            <script src="js/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+            </script>
+        
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="Icon" href="../Images/Icon.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="./login.js">
+<link rel="stylesheet" href="./login.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./login.js"></script>
+	<!-- <script src="./script.js"></script> -->
+    <link rel="stylesheet" href="./login.css">
+
+    <!-- Reuse a Header using jquery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script>
+       $(function () {
+         $('#header').load("../../Header/header.html");
+         $('#footer').load("../../Footer/footer.html")
+           
+       });
+       </script>
+</head>
+
+<body class="bg">
+
+<div id="header"></div>
+
+
+<div class="signup">
+	<div class="container">
+	<div class="col-lg-8
+		m-auto d-block">
+		<form action="../index.html">
+	
+<h1>Sign in</h1>
+		<div class="form-group">
+			<label for="user">Email</label>
+			<input type="email" name="email" id="email" required class="form-control" placeholder="abc@gmail.com">
+			<h5 id="emailvalid" class="invalid-feedback" style="color:red;">
+					Email is in-valid
+        </h5>
+		</div>
+
+		<div class="form-group">
+			<label for="password">
+					Password
+			</label>
+			<input type="password" name="pass" id="password" class="form-control" placeholder="password" >
+			<h5 id="passcheck" class="invalid-feedback" style="color: red;">
+				**Please Fill the password
+			</h5>
+		</div>
+		<div class="checkbox mb-3">
+			<label>
+			  <input type="checkbox" value="remember-me"> Remember me</label>
+			<Label ><span style="margin-left: 109px;"><a href="#"> Forgot Password</a></Label></span>
+		  </div>
+
+	<input type="submit" id="submitbtn" value="sign In" class="btn btn-primary">
+		</form>
+	</div>
+	</div>
+</div>
+
+	<div id="footer"></div>
+</body>
+</html>

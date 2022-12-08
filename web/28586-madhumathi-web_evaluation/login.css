@@ -1,0 +1,27 @@
+body
+{
+  margin:0px; background-color:#c5dbe6; color:#f7f7f7; font-family:Arial, Helvetica, sans-serif;
+}
+#main
+{
+  width:600px; height:260px; margin-left:auto; margin-right:auto; border-radius:5px; padding-left:10px; margin-top:100px;
+   padding-top:20px;
+}
+#main table
+{
+  /* font-family:"Comic Sans MS", cursive; */
+  font-family: 'Courier New', Courier, monospace;
+} 
+/* css code for textbox */
+.tb
+{
+ height:28px; width:230px; border:1px solid #273ea4; color:#584c55; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;
+}
+@media screen and (max-width: 800px){
+  body,#main,#main table,.tb{
+    width: 100px;
+    
+  }
+  }
+
+

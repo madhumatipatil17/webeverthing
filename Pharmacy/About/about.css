@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo img{
+    width: 7%;
+    height: 10%;
+    
+}
+
+#navbar
+{
+    position: sticky;
+    height:100px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem .5rem ;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0,.5);
+    background: linear-gradient(white,white);
+    width: 100%;
+}
+
+.navbar .navbar-brand
+{
+font-size: 35px;
+font-weight:800;
+color: black !important;
+}
+.nav-link{
+    font-size: large;
+}
+.nav-item{
+    padding: 20px;
+    
+    
+}
+
+#navbarSupportedContent
+{
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover
+{
+    border-bottom: 2px solid gray;
+}
+
+#navbarSupportedContent button
+{
+    background:black;
+    width: 5rem;
+    border-radius: 15px;
+}
+.item{
+    margin-left:-300px;
+    
+}
+
+.but {
+    margin-left: 37%;
+    
+}
+
+/* .abt
+{
+ background: linear-gradient(rgba(230, 225, 225, 0.3),rgba(0,0,0,.4)), url(../images/pexels-julie-viken-593451.jpg);  
+ background:linear-gradient(#98D7C2,#0074B7);
+ background-size: cover; 
+ background-position: center; 
+ align-items: center;
+ 
+} */
+#about 
+{   align-items: center; 
+    background : linear-gradient();
+}
+
+#about h1
+{
+    font-weight: 800;
+    margin-top: 5%;
+    font-size: 50px;
+    margin-left: -100px;
+    color :black;
+}
+
+#about p
+{
+    color :black;
+    margin-left: -100px;
+    margin-top: 10%;
+}
+.ima{
+    position: relative;
+    top: 15%;
+    left: 0px;
+    width: 90%;
+    height: 80%;
+    /* border:10px solid #0074B7 ; */
+}
+.icons .fa{
+    color: #08e4ce;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 1px;
+    margin-left: 85px;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .but{
+        margin-left: 40%;
+    }
+    .menu{
+        margin-left: 400px;
+        margin-top: -38px;
+        background-color: black;
+        border-radius: 7px;
+    }
+     
+ 
+.item{
+    font-size: large;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 2px;
+    background-color: white;
+}
+#about 
+{   align-items: center; 
+    background : linear-gradient();
+}
+
+#about h1
+{
+    font-weight: 800;
+    margin-top: 5%;
+    font-size: 50px;
+    margin-left: 10px;
+    color :black;
+}
+
+#about p
+{
+    color :black;
+    margin-left: 10px;
+    margin-top: 10%;
+}
+.ima{
+    position: relative;
+    top: 15%;
+    left: 0px;
+    width: 90%;
+    height: 80%;
+    /* border:10px solid #0074B7 ; */
+}
+.icons .fa{
+    color: #08e4ce;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 1px;
+    margin-left: 85px;
+  }
+  
+  }
